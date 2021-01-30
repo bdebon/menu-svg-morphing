@@ -2,15 +2,8 @@ body {
   font-family: 'eesti';
   font-size: 16px;
   background: #FDFDFD;
+  overflow-x: hidden;
 }
-
-
-.container {
-  padding: 0 32px;
-  max-width: 1440px;
-  width: 100%;
-}
-
 
 @media (max-width: 750px) {
 
@@ -20,3 +13,69 @@ body {
 
 }
 
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-container {
+  background: white;
+  height: 100vh;
+  transition: transform 600ms ease;
+}
+
+.menu-container {
+  background: black;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  right: 0;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 600ms ease;
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+
+    ul {
+      display: flex;
+
+      li {
+        margin-right: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+//.menu-open {
+//  .main-container {
+//    transform: translate3d(-700px, 0, 0);
+//  }
+//
+//  .menu-container {
+//    transform: translate3d(calc(100% - 700px), 0, 0);
+//  }
+//}
+svg {
+  width: auto;
+  height: auto;
+}
+
+.morve {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  display: inline-block;
+  pointer-events: none;
+}

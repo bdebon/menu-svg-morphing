@@ -9,6 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "assets": "^3.0.1",
     "js": "^0.1.0",
     "parcel-plugin-asset-copier": "^1.1.0",
